@@ -11,10 +11,6 @@ public class Main {
             int num = intInputer();
             if (num == 0) break;
             switch (num) {
-                case 11: { // обобщённая коробка
-
-                    break;
-                }
                 case 35: { // задание "список"
                     // пример использования со списком строк
                     List<String> stringList = new ArrayList<>();
@@ -119,14 +115,6 @@ public class Main {
                     Queue <Integer> SL2;
                     SL2 = sEx65.reverseQueue(SL1); // вызываем метод реверса и записываем в L2
                     System.out.println("L2: " + SL2);
-                    break;
-                }
-                case 71: {
-
-                    break;
-                }
-                case 72: {
-
                     break;
                 }
                 default: {
