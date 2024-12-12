@@ -1,6 +1,5 @@
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+import java.nio.file.*;
 import java.util.*;
 
 
@@ -11,6 +10,27 @@ public class Main {
             int num = intInputer();
             if (num == 0) break;
             switch (num) {
+                case 11: { // задание "шаблоны"
+                    CachedFraction11 cf1 = new CachedFraction11(1,2);
+                    CachedFraction11 cf2 = new CachedFraction11(2,3);
+
+                    System.out.println("Дробь 1: " + cf1);
+                    System.out.println("Дробь 2: " + cf2);
+                    System.out.println("Кешированное вещественное значение 1: ");
+                    cf1.getRealValue();
+                    System.out.println("Кешированное вещественное значение 2: ");
+                    cf2.getRealValue();
+
+                    System.out.println("\nЗадаём числитель и знаменатель для 1 дроби.");
+                    cf1.setNumeratorDenominator(3,4);
+                    System.out.println("Обновлённое значение дроби 1: " + cf1);
+                    System.out.println("Кешированное вещественное значение 1: ");
+                    cf1.getRealValue();
+                    System.out.println("Кешированное вещественное значение 2: ");
+                    cf2.getRealValue();
+
+                    break;
+                }
                 case 35: { // задание "список"
                     // пример использования со списком строк
                     List<String> stringList = new ArrayList<>();
